@@ -89,5 +89,6 @@
   "bugs": {
     "url": "https://github.com/BVP-ISTE/hack_the_crisis2.0/issues"
   },
-  "proxy": "https://api.devfolio.co/api/hackathons/"
+  "proxy": "https://api.devfolio.co/api/hackathons/",
+  "homepage": "https://github.com/BVP-ISTE/hack_the_crisis2.0#readme"
 }
