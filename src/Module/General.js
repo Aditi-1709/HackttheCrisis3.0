@@ -23,6 +23,8 @@ import celo from "../Module/Assets/devfolio/Celo Logo Color.svg";
 import filecoin from "../Module/Assets/devfolio/Filecoin White.svg";
 import polygon from "../Module/Assets/devfolio/Polygon_Logo-White.svg";
 import tezos from "../Module/Assets/devfolio/Tezos_Logo-White.svg";
+import replit from "../Module/Assets/sponsorsLogos/replit.png";
+import solana from "../Module/Assets/sponsorsLogos/solanaLogo.png";
 
 import mentorboxx from "../Module/Assets/sponsorsLogos/mentorboxx.png";
 import newton from "../Module/Assets/sponsorsLogos/newton.png";
@@ -63,11 +65,20 @@ import dev from "./Assets/teami/Dev.jpeg";
 
 import boy from "./Assets/boy.png";
 
+// importing theme images
+import eduImg from "./Assets/theme_img/ed01.jpg";
+import healthImg from "./Assets/Themes/smart-hospital.jpg";
+import tradeImg from "./Assets/theme_img/trade.jpg";
+import smartCityImg from "./Assets/theme_img/smart_city01.jpg";
+import investImg from "./Assets/theme_img/invest_03.jpg";
+import openInoImg from "./Assets/theme_img/open_ino_02.jpg";
+import faqImg from "./Assets/theme_img/faq01.jpg"; 
+
 const TOP_SECTION = {
   TITLE: "Hack The Crisis 3.0",
-  Typed_effect: ["36 hours of creation", "Win awesome prizes"],
+  Typed_effect: ["24 hours of creation", "Win awesome prizes","Increase your Network","Push your Limits!"],
   SHORT_DESCRIPTION:
-    "Join us on 21st May - 22nd May 2022 with over 500 students from across the nation for 36 hours of creation, innovation, & fun.",
+    "Join us on 26th October - 27th October 2023 from across the nation for 36 hours of creation, innovation, & fun.",
   IMG_SRC: boy,
   DISCORD_LINK: "",
   JUDGES_FORM_LINK: "./",
@@ -122,6 +133,83 @@ const FOOTER = {
  * create as many arrays you want all prizes will be rendered
  * in a group of 3.
  */
+
+// Themes
+const ThemesInfo = [
+  [
+    // Array 1
+    {
+      heading: "Education",
+      icon: <i className="fas fa-4x fa-trophy"></i>,
+      description: "Develop intelligent systems leveraging AI and IoT to automate processes and enhance productivity across industries",
+      img: eduImg,
+    }
+  ],
+  [
+    // Array 2
+    {
+      heading: "Health",
+      icon: <i className="fas fa-4x fa-trophy"></i>,
+      description: " Utilize technology to preserve and promote cultural heritage, traditions, and historical artifacts for future generations",
+      img: healthImg,
+    }
+  ],
+  [
+    // Array 3
+    {
+      heading: "Trade",
+      icon: <i className="fas fa-4x fa-trophy"></i>,
+      description: "Explore the potential of blockchain technology for secure, transparent applications beyond finance.",
+      img: tradeImg,
+    }
+  ],
+  [
+    // Array 4
+    {
+      heading: "Investment",
+      icon: <i className="fas fa-4x fa-trophy"></i>,
+      description: "Revolutionize the travel experience through tech-driven solutions, offering personalized, sustainable, and immersive journeys",
+      img: investImg,
+    }
+  ],
+  [
+    // Array 5
+    {
+      heading: "Smart City",
+      icon: <i className="fas fa-4x fa-trophy"></i>,
+      description: "Engineer eco-friendly innovations to reduce carbon footprint, conserve resources, and promote a cleaner planet.",
+      img: smartCityImg,
+    }
+  ],
+  [
+    // Array 6
+    {
+      heading: "Open Innovation",
+      icon: <i className="fas fa-4x fa-trophy"></i>,
+      description: " Develop cutting-edge technologies to enhance healthcare access, affordability, and patient outcomes.",
+      img: openInoImg,
+    }
+  ],
+  // [
+  //   // Array 7
+  //   {
+  //     heading: "Smart City",
+  //     icon: <i className="fas fa-4x fa-trophy"></i>,
+  //     description: "Create interconnected, data-driven urban solutions to optimize resources, improve services, and enhance citizen well-being.",
+  //     img: cityImg,
+  //   }
+  // ],
+  // [
+  //   // Array 8
+  //   {
+  //     heading: "Smart Agriculture",
+  //     icon: <i className="fas fa-4x fa-trophy"></i>,
+  //     description: " Integrate technology in farming practices to optimize yields, monitor crops, and achieve sustainable agriculture goals.",
+  //     img: agriImg,
+  //   }
+  // ],
+]
+
 
 const Prizeinfo = [
   [
@@ -421,55 +509,79 @@ const silversponsor = [
   [{src: pharmeasy, link: ""}]
 ];
 
+const htc2023sponsor = [
+  [
+    {src: devfolio, link: "https://devfolio.co",alt:"DEVFOLIO LOGO"},
+    {src: polygon, link: "https://polygon.technology/",alt:"POLYGON LOGO"},
+    {src: solana, link: "",alt:"SOLANA LOGO"},
+  ],
+  [
+    {src: replit, link: "" , alt:"REPLIT LOGO"},    
+    {src: filecoin, link: "https://filecoin.io" , alt:"FILECOIN LOGO"},
+  ]
+];
+
 /** Instructions
  * Follow the strcuture provided below to add as many as FAQ's you want
  */
 const frequentlyAskedQuestions = [
   [
-    [
-      {
-        label: "What is a hackathon?",
-        content:
-          "Hackathon is a tool to drive sustained innovation and crowdsource solutions to address pressing real-life business problems and social issues. A hackathon is typically a time-bound competitive event where participants collaborate to build proofs of concept and minimum viable products for a specific pre-defined problem or to innovate."
-      },
-      {
-        label: "Who can attend?",
-        content:
-          "Anyone is welcome to participate in this event. While experience coding and programming is a huge plus, teams will also need people with strong presentation skills and brilliant ideas."
-      },
-      {
-        label: "I am a first time hacker, what should I do?",
-        content:
-          "No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome workshops and events which will help you get started with hackathon and hacking in general."
-      },
-      {
-        label: "How team formation works?",
-        content:
-          "You can form team with 4 members in it at maximum. If you don't have a team, there'll be plenty of opportunities for you to meet hackers and form a team!"
-      }
-    ],
-    [
-      {
-        label: "How to register myself in the hackathon?",
-        content:
-          "All you need is to fill our form above and join Discord, we will guide you through everything there"
-      },
-      {
-        label: "I have more questions?",
-        content:
-          "Reach us directly at hackthecrisis2021@gmail.com we would happy to help you."
-      },
-      {
-        label: "How teams will be judged?",
-        content:
-          "There will be a preliminary round of judging in which teams will present their solution. Only teams that are successful in this preliminary round will present to the larger group in the final round."
-      },
-      {
-        label: "Will there be swag?",
-        content: "Yes! Participants will be recieveing swag!. 😎"
-      }
-    ]
-  ]
+    {
+      img: "1.png",
+      label: "What is a hackathon?",
+      content:
+        "Hackathon is a tool to drive sustained innovation and crowdsource solutions to address pressing real-life business problems and social issues. ",
+    },
+  ],
+  [
+    {
+      img: "2.png",
+
+      label: "Who can attend?",
+      content:
+        "Anyone is welcome to participate in this event. While experience coding and programming is a huge plus, teams will also need people with strong presentation skills and brilliant ideas.",
+    },
+  ],
+  [
+    {
+      img: "3.png",
+
+      label: "I am a first time hacker, what should I do?",
+      content:
+        "Welcome aboard, first-time hackers! Dive into the hacking world at our hackathon. Engage in dynamic workshops and events to kickstart your journey. Let's learn, hack, and have a great time together!",
+    },
+  ],
+  [
+    {
+      img: "4.png",
+
+      label: "How team formation works?",
+      content:
+        "You can form team with 4 members in it at maximum. If you don't have a team, there'll be plenty of opportunities for you to meet hackers and form a team!",
+    },
+  ],
+  [
+    // {
+    //   label: "I have more questions?",
+    //   content:
+    //     "Reach us directly at hackthecrisis2021@gmail.com we would happy to help you."
+    // },
+    {
+      img: "5.png",
+
+      label: "How teams will be judged?",
+      content:
+        "There will be a preliminary round of judging in which teams will present their solution. Only teams that are successful in this preliminary round will present to the larger group in the final round.",
+    },
+  ],
+  [
+    {
+      img: "6.png",
+
+      label: "Will there be swag?",
+      content: "Yes! Participants will be recieveing swag!. 😎",
+    },
+  ],
 ];
 
 export {
@@ -478,11 +590,13 @@ export {
   SOCIALS,
   FOOTER,
   Prizeinfo,
+  ThemesInfo,
   // sponsorLogos,
-  eventpartner,
-  platinumsponsor,
-  goldsponsor,
-  silversponsor,
+  // eventpartner,
+  // platinumsponsor,
+  // goldsponsor,
+  // silversponsor,
+  htc2023sponsor,
   TeamInfo,
   // Mentor as JudgesInfo,
   frequentlyAskedQuestions
